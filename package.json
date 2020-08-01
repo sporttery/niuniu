@@ -1,0 +1,16 @@
+{
+  "main": "src/test.js",
+  "name": "niuniu",
+  "version": "1.0.0",
+  "description": "niuniu",
+  "scripts": {
+    "serve": "node src/test.js",
+    "test": "node src/test.js",
+    "nexe": "ncc build src/test.js -m -o bin && nexe -i bin/index.js -t win-x64 --name niuniu -o bin/niuniu.exe",
+    "nexeWin": "ncc build src/test.js -m -o bin && nexe -i bin/index.js --build -t win-x64 --ico favicon.ico --rc {CompanyName: 'ecp888.com',Version:'1.1.0'} --name niuniu -o bin/niuniu.exe"
+  },
+  "author": "zw",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
