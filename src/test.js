@@ -181,7 +181,7 @@ function calc(masterIndex, playerCards) {
         masterCard.wMoney += money;
       } else {
         //输的金额＝投注金额＊庄家牛数；
-        money = masterCard.niu * -betMoney;
+        money = masterCard.niu * betMoney;
         //玩家输钱总额
         masterCard.lMoney += money;
       }
@@ -193,7 +193,7 @@ function calc(masterIndex, playerCards) {
   masterCard.getMoney = masterCard.lMoney + masterCard.wMoney * 0.1;
   //支出 玩家赢钱总额*90%＋玩家投注总额＊30%;
   masterCard.payMoney =
-    masterCard.wMoney * 0.9 + (playerCount - 1) * betMoney * 0.3;
+    masterCard.wMoney   + (playerCount - 1) * betMoney * 0.3;
   //盈利 每期收入-每期支出;
   masterCard.winMoney = masterCard.getMoney - masterCard.payMoney;
 
