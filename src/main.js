@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: "56f2cff845240.gz.cdb.myqcloud.com",
-  port: 17816,
+  port: 17866,
   user: "cdb_outerroot",
-  password: "cdb_outerroot",
+  password: "cdb_outerroot123",
   database: "match_db",
 });
 
